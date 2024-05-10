@@ -6,7 +6,7 @@ def main():
     con = sqlite3.connect("data.db")
     cur = con.cursor()
     #SQL命令関数
-    sql_execute(cur.con)
+    sql_execute(cur,con)
 
     #SQLを実行しファイルにアクセス
     con.commit()
